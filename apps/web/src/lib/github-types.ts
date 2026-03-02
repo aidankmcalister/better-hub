@@ -12,6 +12,7 @@ export interface IssueItem {
 	draft?: boolean;
 	pull_request?: { merged_at?: string | null };
 	comments: number;
+	review_decision?: "APPROVED" | "CHANGES_REQUESTED" | "REVIEW_REQUIRED" | null;
 }
 
 export interface RepoItem {
